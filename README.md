@@ -125,8 +125,8 @@ The model runs and spike times are recorded to disk. The model executes in a tim
 
 - [x] Showed that a GENN model can run on Nvidia Jetson Nano.
 #### TODO
+- [ ] Use the tool `jtop` and or `tegrastats` (built in) to profile the Jetson's GPU and to confirm that the GPU is experiencing full utilization.  
 - [ ] Visualize model output in Julia and upload data and code to this repository.
-- [ ] Use the tool `jtop` and or `tegrastats` (built in) to profile the Jetson's GPU and to confirm that the GPU is experiencing full utilization.
 - [ ] Re-wire cortical model to fit V1, attach NMNIST input data to LGN/thalamus
 - [ ] Try the larger version of Potjans/Knight even though it is predicted to cause a memory exhaustion failure.
   
