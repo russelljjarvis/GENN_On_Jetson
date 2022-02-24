@@ -69,40 +69,46 @@ The rest is very loosely based on the instructions for installing [genn](https:/
 
 <details>
 <summary> Step 5. </summary>   
-#### For future reference make a note to inform your compiler where CUDA lives.
+For future reference make a note to inform your compiler where CUDA lives.
 
 In the terminal run:
+  
 ```
 echo "export CUDA_PATH=/usr/local/cuda" >> ~/.bashrc
 echo "export PATH=$PATH:$CUDA_PATH/bin" >> ~/.bashrc
 ```
+  
 </details>
   
 <details>
 <summary> Step 6. </summary>   
-#### Install the GENN source code
+Install the GENN source code
 Now run:
+  
 ```
 git clone https://github.com/genn-team/genn # obtain the genn source code
 cd genn # enter the directory of the genn code
 echo "export PATH=$PATH:/home/me/genn/bin" >> ~/.bashrc
 source ~/.bashrc
 ```
+  
 </details>
   
 <details>
 <summary> Step 7. </summary>   
-#### Use GENN to compile the Potjans model
+Use GENN to compile the Potjans model
 If you are still in the genn directory:
+
 ```
 cd /userproject/PotjansMicrocircuit_project
 make #compiles the Potjans model
 ```
+  
 </details>
   
 <details>
 <summary> Step 8. </summary>   
-#### Run the model
+Run the model
 This final step runs the compiled binary of the Potjans model, you can configure the model itself too, before compiling it.
 
 ```
