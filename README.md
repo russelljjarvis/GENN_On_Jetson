@@ -15,7 +15,7 @@
 <p align="center">
   
 ## Description
-This is a basic Guide for configuring the Nvidia Jetson Nano for running the GENN Potjan et al cortical models developed by Knight et al.
+This is a basic Guide for configuring the Nvidia Jetson Nano for running the GENN Potjan et al cortical model implemented by Knight et al in Cpp/CUDA.
 
 ## Motivation
 <details>
@@ -34,22 +34,41 @@ These steps ran surprisingly smoothly for me but note I deliberately worked from
 </details>
 
 ## Installation Steps
-### Step 1.
+<details>
+<summary> Step 1. </summary> 
+  
 Acquire an [Nvidia Jetson Nano](https://developer.nvidia.com/embedded/jetson-nano-developer-kit) (developer) there are two memory options buy the one with the greatest amount of memory (4GB).
-### Step 2.
+</details>
+
+<details>
+<summary> Step 2. </summary> 
+  
+  
 Download and install the Balena Etcher [tool](https://www.balena.io/etcher/) suitable for your operating system. 
 Flash the latest Jetpack to the SD Card this guide will only work for >=[Jetpack 4.6](https://developer.nvidia.com/embedded/jetpack), and has only been tested for Jetpack 4.6
 Use Etcher to flash the jetpack-4.6
-### Step 3.
+  
+</details>
+  
+<details>
+<summary> Step 3. </summary> 
+
 Insert the flashed image into the Jetson, log in to the Jetson.
 
 Git is already installed with Jetpack 4.6
 CUDA Toolkit is already installed when on Jetpack 4.6 although you may be prompted to agree to the licence when you first log in to the Jetson.
-
-### Step 4
+  
+</details>
+  
+<details>
+<summary> Step 4. </summary>   
+  
 The rest is very loosely based on the instructions for installing [genn](https://github.com/genn-team/genn).
 
-### Step 5
+</details>  
+
+<details>
+<summary> Step 5. </summary>   
 #### For future reference make a note to inform your compiler where CUDA lives.
 
 In the terminal run:
@@ -57,7 +76,10 @@ In the terminal run:
 echo "export CUDA_PATH=/usr/local/cuda" >> ~/.bashrc
 echo "export PATH=$PATH:$CUDA_PATH/bin" >> ~/.bashrc
 ```
-### Step 6
+</details>
+  
+<details>
+<summary> Step 6. </summary>   
 #### Install the GENN source code
 Now run:
 ```
@@ -66,14 +88,20 @@ cd genn # enter the directory of the genn code
 echo "export PATH=$PATH:/home/me/genn/bin" >> ~/.bashrc
 source ~/.bashrc
 ```
-### Step 7
+</details>
+  
+<details>
+<summary> Step 7. </summary>   
 #### Use GENN to compile the Potjans model
 If you are still in the genn directory:
 ```
 cd /userproject/PotjansMicrocircuit_project
 make #compiles the Potjans model
 ```
-#### Step 8
+</details>
+  
+<details>
+<summary> Step 8. </summary>   
 #### Run the model
 This final step runs the compiled binary of the Potjans model, you can configure the model itself too, before compiling it.
 
@@ -82,12 +110,13 @@ This final step runs the compiled binary of the Potjans model, you can configure
 ```
 
 The model runs and spike times are recorded to disk. The model executes in a timely fashion.
-
+</details>
 ## Development Plans
 #### DONE
 
 - [x] Showed that a GENN model can run on Nvidia Jetson Nano.
 #### TODO
+- [ ] Visualize model output in Julia and upload data and code to this repository.
 - [ ] Use the tool `jtop` and or `tegrastats` (built in) to profile the Jetson's GPU and to confirm that the GPU is experiencing full utilization.
 - [ ] Re-wire cortical model to fit V1, attach NMNIST input data to LGN/thalamus
 - [ ] Try the larger version of Potjans/Knight even though it is predicted to cause a memory exhaustion failure.
