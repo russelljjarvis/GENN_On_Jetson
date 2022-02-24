@@ -17,6 +17,7 @@ CUDA Toolkit is already installed when on Jetpack 4.6 although you may be prompt
 ### Step 4
 The rest is very loosely based on the instructions for installing `genn` (https://github.com/genn-team/genn).
 
+### Step 5
 #### Leave a message to inform your compiler where CUDA lives (for future reference)
 
 In the terminal run:
@@ -24,6 +25,7 @@ In the terminal run:
 echo "export CUDA_PATH=/usr/local/cuda" >> ~/.bashrc
 echo "export PATH=$PATH:$CUDA_PATH/bin" >> ~/.bashrc
 ```
+### Step 6
 #### Install the GENN source code
 Now run:
 ```
@@ -32,8 +34,8 @@ cd genn # enter the directory of the genn code
 echo "export PATH=$PATH:/home/me/genn/bin" >> ~/.bashrc
 source ~/.bashrc
 ```
-#### Use GENN to compile the Potjans model
-if you are still in the genn directory:
+### Use GENN to compile the Potjans model
+#### If you are still in the genn directory:
 ```
 cd /userproject/PotjansMicrocircuit_project
 make #compiles the Potjans model
