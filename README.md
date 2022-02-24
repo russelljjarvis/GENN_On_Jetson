@@ -50,7 +50,8 @@ If you are still in the genn directory:
 cd /userproject/PotjansMicrocircuit_project
 make #compiles the Potjans model
 ```
-
+#### Step 8
+#### Run the model
 This final step runs the compiled binary of the Potjans model, you can configure the model itself too, before compiling it.
 
 ```
@@ -59,6 +60,7 @@ This final step runs the compiled binary of the Potjans model, you can configure
 
 The model runs!
 
-#### Step 8
-use the tool `jtop` and or `tegrastats` (built in) to profile the Jetson's GPU and to confirm that the GPU is experiencing full utilization.
+#### TODO
+
+Use the tool `jtop` and or `tegrastats` (built in) to profile the Jetson's GPU and to confirm that the GPU is experiencing full utilization.
 
