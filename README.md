@@ -7,7 +7,7 @@
 <p align="center">
   <a href="#Description">Description</a> •
   <a href="#Motivation">Motivation</a> •
-  <a href="#User Experience">Install</a> •
+  <a href="#User Experience">User Experience</a> •
   <a href="#Step 1">Step 1</a> •
   <a href="#Step 2">Step 2</a> •
   <a href="#TODO">TODO</a> •
