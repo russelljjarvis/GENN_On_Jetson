@@ -58,7 +58,7 @@ This final step runs the compiled binary of the Potjans model, you can configure
 ./generate_run test
 ```
 
-The model runs!
+The model runs and spike times are recorded to disk. The model executes in a timely fashion.
 
 #### TODO
 
