@@ -10,10 +10,22 @@ https://developer.nvidia.com/embedded/jetpack
 Use Bletcher to flash the jetpack-4.6
 ### Step 3.
 Insert the flashed image into the Jetson, log in to the Jetson.
+
 Git is already installed with Jetpack 4.6
+CUDA Toolkit is already installed when on Jetpack 4.6 although you may be prompted to agree to the licence when you first log in to the Jetson.
+
+The rest is very loosely based on the instructions for installing `genn` (https://github.com/genn-team/genn).
+
 In the terminal run:
 ```
-git clone https://github.com/genn-team/genn
-cd genn
+echo "export CUDA_PATH=/usr/local/cuda" >> ~/.bashrc
+echo "export PATH=$PATH:$CUDA_PATH/bin" >> ~/.bashrc
+```
+Now run:
+```
+git clone https://github.com/genn-team/genn # obtain the genn source code
+cd genn # enter the directory of the genn code
+echo "export PATH=$PATH:/home/me/genn/bin" >> ~/.bashrc
+source ~/.bashrc
 ```
 
