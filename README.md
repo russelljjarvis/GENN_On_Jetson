@@ -18,7 +18,7 @@
 This is a basic Guide for configuring the Nvidia Jetson Nano for running the GENN Potjan et al cortical models developed by Knight et al.
 
 <details>
-<summary> Motivation </summary> 
+<summary> ## Motivation </summary> 
 
 The nvidia Jetson nano is a cheap ($249 AUD) development board that comes with a modest Nvidia GPU. The Jetson nano enables people to develop execute and test GPU compliant code on affordable local resource. Additionally the Jetson Nano may consume significantly less electricity than large workstations. 
 
@@ -26,7 +26,7 @@ Neuromorphic hardware is theoretically a great platform for simulating cortical 
 </details>
 
 <details>
-  <summary>User Experience</summary>
+  <summary> ## User Experience</summary>
 
 These steps ran surprisingly smoothly for me but note I deliberately worked from a fresh jetpack install and I declined package updates. From my experience Jetson CUDA environments and dependencies can deteriate very rapidly if you try to install various different packages and make too many environmnental changes. Its almost worth having a seperate SD card for different projects.
 </details>
