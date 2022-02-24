@@ -83,7 +83,17 @@ This final step runs the compiled binary of the Potjans model, you can configure
 
 The model runs and spike times are recorded to disk. The model executes in a timely fashion.
 
-#### TODO
+## Development Plans
+#### DONE
 
-Use the tool `jtop` and or `tegrastats` (built in) to profile the Jetson's GPU and to confirm that the GPU is experiencing full utilization.
+- [x] Showed that a GENN model can run on Nvidia Jetson Nano.
+#### TODO
+- [ ] Use the tool `jtop` and or `tegrastats` (built in) to profile the Jetson's GPU and to confirm that the GPU is experiencing full utilization.
+- [ ] Re-wire cortical model to fit V1, attach NMNIST input data to LGN/thalamus
+- [ ] Try the larger version of Potjans/Knight even though it is predicted to cause a memory exhaustion failure.
+  
+  
+  
+
+
 
