@@ -7,9 +7,10 @@
 <p align="center">
   <a href="#Description">Description</a> •
   <a href="#Motivation">Motivation</a> •
-  <a href="#User Experience">User Experience</a> •
-  <a href="#Step 1">Step 1</a> •
-  <a href="#Step 2">Step 2</a> •
+  <a href="#User Experience">User-Experience</a> •
+  <a href="#Installation Steps">Installation Steps</a> •
+  <a href="#Step 1">Step-1</a> •
+  <a href="#Step 2">Step-2</a> •
   <a href="#TODO">TODO</a> •
 </p>
 
@@ -27,6 +28,7 @@ Neuromorphic hardware is theoretically a great platform for simulating cortical 
 ## User Experience
 These steps ran surprisingly smoothly for me but note I deliberately worked from a fresh jetpack install and I declined package updates. From my experience Jetson CUDA environments and dependencies can deteriate very rapidly if you try to install various different packages and make too many environmnental changes. Its almost worth having a seperate SD card for different projects.
 
+## Installation Steps
 ### Step 1.
 Acquire an [Nvidia Jetson Nano](https://developer.nvidia.com/embedded/jetson-nano-developer-kit) (developer) there are two memory options buy the one with the greatest amount of memory (4GB).
 ### Step 2.
