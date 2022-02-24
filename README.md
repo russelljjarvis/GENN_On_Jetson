@@ -1,5 +1,7 @@
 # JetsonKnightPotjans
 A Basic Guide for configuring the Nvidia Jetson Nano for running the GENN Potjan et al cortical models developed by Knight et al.
+These steps ran surprisingly smoothly for me, but note, I deliberately worked from a freshjetpack install and I declined package updates, from my experience Jetson CUDA environments and dependencies can deteriate very rapidly if you try to install too many different packages and make too many environmnental changes.
+
 
 ### Step 1.
 Acquire an Nvidia Jetson Nano (developer) there are two memory options buy the one with the greatest amount of memory (4GB).
