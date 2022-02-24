@@ -111,7 +111,9 @@ This final step runs the compiled binary of the Potjans model, you can configure
 
 The model runs and spike times are recorded to disk. The model executes in a timely fashion.
 </details>
+
 ## Development Plans
+  
 #### DONE
 
 - [x] Showed that a GENN model can run on Nvidia Jetson Nano.
