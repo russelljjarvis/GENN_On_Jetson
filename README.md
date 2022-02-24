@@ -12,7 +12,7 @@ Neuromorphic hardware is theoretically a great platform for simulating cortical 
 These steps ran surprisingly smoothly for me but note I deliberately worked from a fresh jetpack install and I declined package updates. From my experience Jetson CUDA environments and dependencies can deteriate very rapidly if you try to install various different packages and make too many environmnental changes. Its almost worth having a seperate SD card for different projects.
 
 ### Step 1.
-Acquire an Nvidia Jetson Nano (developer) there are two memory options buy the one with the greatest amount of memory (4GB).
+Acquire an [Nvidia Jetson Nano](https://developer.nvidia.com/embedded/jetson-nano-developer-kit) (developer) there are two memory options buy the one with the greatest amount of memory (4GB).
 ### Step 2.
 Download and install the Balena Etcher [tool](https://www.balena.io/etcher/) suitable for your operating system. 
 Flash the latest Jetpack to the SD Card this guide will only work for >=[Jetpack 4.6](https://developer.nvidia.com/embedded/jetpack), and has only been tested for Jetpack 4.6
