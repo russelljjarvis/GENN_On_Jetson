@@ -1,16 +1,16 @@
 
 
-# Jetson Knight Potjans
-
-
+<h1 align="center">
+  Jetson Knight Potjans
+</h1>
 
 <p align="center">
   <a href="#Description">Description</a> •
   <a href="#Motivation">Motivation</a> •
   <a href="#User Experience">Install</a> •
-  <a href="#Step 1">Plans</a> •
-  <a href="#Step 2">Flow Chart</a> •
-  <a href="#TODO">Why Not Optimize Small SNNs With Bigger SNNs</a>
+  <a href="#Step 1">Step 1</a> •
+  <a href="#Step 2">Step 2</a> •
+  <a href="#TODO">TODO</a> •
 </p>
 
 <p align="center">
