@@ -34,8 +34,8 @@ These steps ran surprisingly smoothly for me but note I deliberately worked from
 </details>
 
 ## Installation Steps
-Steps 1-3 only concern setting up a fresh Jetson Nano.
-Steps 4-7 involve setting up GENN.
+Steps: *1-3* concern setting up a fresh Jetson Nano.
+Only steps: *4-7* involve setting up GENN.
   
 <details>
 <summary> Step 1. </summary> 
