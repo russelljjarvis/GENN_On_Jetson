@@ -6,10 +6,10 @@ These steps ran surprisingly smoothly for me but note I deliberately worked from
 ### Step 1.
 Acquire an Nvidia Jetson Nano (developer) there are two memory options buy the one with the greatest amount of memory (4GB).
 ### Step 2.
-Download and install the Balena Etcher tool suitable for your operating system https://www.balena.io/etcher/. 
-Flash the latest Jetpack to the SD Card this guide will only work for >=jetpack 4.6, and has only been tested for 4.6
-https://developer.nvidia.com/embedded/jetpack
-Use Bletcher to flash the jetpack-4.6
+Download and install the Balena Etcher [tool](https://www.balena.io/etcher/) suitable for your operating system. 
+Flash the latest Jetpack to the SD Card this guide will only work for >=jetpack 4.6, and has only been tested for [4.6]
+(https://developer.nvidia.com/embedded/jetpack)
+Use Etcher to flash the jetpack-4.6
 ### Step 3.
 Insert the flashed image into the Jetson, log in to the Jetson.
 
