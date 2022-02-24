@@ -39,8 +39,10 @@ source ~/.bashrc
 ```
 cd /userproject/PotjansMicrocircuit_project
 make #compiles the Potjans model
+```
 
 This final step runs the compiled binary of the Potjans model, you can configure the model itself too, before compiling it.
+
 ```
 ./generate_run test
 ```
