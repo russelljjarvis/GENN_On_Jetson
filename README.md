@@ -15,7 +15,7 @@
 <p align="center">
   
 ## Description
-This is a basic Guide for configuring the Nvidia Jetson Nano for running the GENN Potjan et al cortical model implemented by Knight et al in Cpp/CUDA.
+This is a basic guide for configuring the Nvidia Jetson Nano for running the GENN Potjan et al cortical model implemented by Knight et al in Cpp/CUDA.
 
 ## Motivation
 <details>
