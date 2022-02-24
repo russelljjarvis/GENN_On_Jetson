@@ -27,7 +27,7 @@ CUDA Toolkit is already installed when on Jetpack 4.6 although you may be prompt
 The rest is very loosely based on the instructions for installing [genn](https://github.com/genn-team/genn).
 
 ### Step 5
-#### Leave a message to inform your compiler where CUDA lives (for future reference)
+#### For future reference make a note to inform your compiler where CUDA lives.
 
 In the terminal run:
 ```
