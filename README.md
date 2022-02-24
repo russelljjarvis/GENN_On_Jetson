@@ -54,16 +54,17 @@ Use Etcher to flash the jetpack-4.6
 <summary> Step 3. </summary> 
 
 Insert the flashed image into the Jetson, log in to the Jetson.
-
-Git is already installed with Jetpack 4.6
-CUDA Toolkit is already installed when on Jetpack 4.6 although you may be prompted to agree to the licence when you first log in to the Jetson.
+Lucky for you I think:
+* Git is already installed with Jetpack 4.6
+* CUDA Toolkit is already installed when on Jetpack 4.6 
+However, you may be prompted to agree to the licence when you first log in to the Jetson.
   
 </details>
   
 <details>
 <summary> Step 4. </summary>   
   
-The rest is very loosely based on the instructions for installing [genn](https://github.com/genn-team/genn).
+The rest is modified from the instructions for installing [genn](https://github.com/genn-team/genn).
 
 </details>  
 
