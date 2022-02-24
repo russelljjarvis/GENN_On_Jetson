@@ -1,7 +1,15 @@
-# Jetson Knight Potjans
-A Basic Guide for configuring the Nvidia Jetson Nano for running the GENN Potjan et al cortical models developed by Knight et al.
-These steps ran surprisingly smoothly for me but note I deliberately worked from a fresh jetpack install and I declined package updates. From my experience Jetson CUDA environments and dependencies can deteriate very rapidly if you try to install various different packages and make too many environmnental changes. Its almost worth having a seperate SD card for different projects.
 
+
+# Jetson Knight Potjans
+This is a basic Guide for configuring the Nvidia Jetson Nano for running the GENN Potjan et al cortical models developed by Knight et al.
+
+## Motivation 
+The nvidia Jetson nano is a cheap ($249 AUD) development board that comes with a modest Nvidia GPU. The Jetson nano enables people to develop execute and test GPU compliant code on affordable local resource. Additionally the Jetson Nano may consume significantly less electricity than large workstations. 
+
+Neuromorphic hardware is theoretically a great platform for simulating cortical models but it is currently not available to hobbiests. Access to Neuromorphic hardware requires a formal application, however the Nvidia Jetson Nano is an affordable product available at a small cost. A cpp/CUDA model of cortex developed by Knight was created to run on GPU hardware, the model has been redesigned to run at an increasing scale of neuron numbers.
+
+## Introduction
+These steps ran surprisingly smoothly for me but note I deliberately worked from a fresh jetpack install and I declined package updates. From my experience Jetson CUDA environments and dependencies can deteriate very rapidly if you try to install various different packages and make too many environmnental changes. Its almost worth having a seperate SD card for different projects.
 
 ### Step 1.
 Acquire an Nvidia Jetson Nano (developer) there are two memory options buy the one with the greatest amount of memory (4GB).
@@ -35,8 +43,9 @@ cd genn # enter the directory of the genn code
 echo "export PATH=$PATH:/home/me/genn/bin" >> ~/.bashrc
 source ~/.bashrc
 ```
-### Use GENN to compile the Potjans model
-#### If you are still in the genn directory:
+### Step 7
+#### Use GENN to compile the Potjans model
+If you are still in the genn directory:
 ```
 cd /userproject/PotjansMicrocircuit_project
 make #compiles the Potjans model
@@ -49,4 +58,7 @@ This final step runs the compiled binary of the Potjans model, you can configure
 ```
 
 The model runs!
+
+#### Step 8
+use the tool `jtop` and or `tegrastats` (built in) to profile the Jetson's GPU and to confirm that the GPU is experiencing full utilization.
 
