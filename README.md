@@ -34,6 +34,9 @@ These steps ran surprisingly smoothly for me but note I deliberately worked from
 </details>
 
 ## Installation Steps
+Steps 1-3 only concern setting up a fresh Jetson Nano.
+Steps 4-7 involve setting up GENN.
+  
 <details>
 <summary> Step 1. </summary> 
   
@@ -65,11 +68,6 @@ However, you may be prompted to agree to the licence when you first log in to th
 <summary> Step 4. </summary>   
   
 The rest is modified from the instructions for installing [genn](https://github.com/genn-team/genn).
-
-</details>  
-
-<details>
-<summary> Step 5. </summary>   
 For future reference make a note to inform your compiler where CUDA lives.
 
 In the terminal run:
@@ -82,7 +80,7 @@ echo "export PATH=$PATH:$CUDA_PATH/bin" >> ~/.bashrc
 </details>
   
 <details>
-<summary> Step 6. </summary>   
+<summary> Step 5. </summary>   
 Install the GENN source code
 Now run:
   
@@ -96,7 +94,7 @@ source ~/.bashrc
 </details>
   
 <details>
-<summary> Step 7. </summary>   
+<summary> Step 6. </summary>   
 Use GENN to compile the Potjans model
 If you are still in the genn directory:
 
@@ -108,7 +106,7 @@ make #compiles the Potjans model
 </details>
   
 <details>
-<summary> Step 8. </summary>   
+<summary> Step 7. </summary>   
 Run the model
 This final step runs the compiled binary of the Potjans model, you can configure the model itself too, before compiling it.
 
