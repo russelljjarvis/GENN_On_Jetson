@@ -18,6 +18,7 @@ CUDA Toolkit is already installed when on Jetpack 4.6 although you may be prompt
 The rest is very loosely based on the instructions for installing `genn` (https://github.com/genn-team/genn).
 
 #### Leave a message to inform your compiler where CUDA lives (for future reference)
+
 In the terminal run:
 ```
 echo "export CUDA_PATH=/usr/local/cuda" >> ~/.bashrc
