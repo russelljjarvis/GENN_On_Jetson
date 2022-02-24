@@ -1,6 +1,6 @@
 # Jetson Knight Potjans
 A Basic Guide for configuring the Nvidia Jetson Nano for running the GENN Potjan et al cortical models developed by Knight et al.
-These steps ran surprisingly smoothly for me, but note, I deliberately worked from a freshjetpack install and I declined package updates, from my experience Jetson CUDA environments and dependencies can deteriate very rapidly if you try to install too many different packages and make too many environmnental changes.
+These steps ran surprisingly smoothly for me but note I deliberately worked from a fresh jetpack install and I declined package updates. From my experience Jetson CUDA environments and dependencies can deteriate very rapidly if you try to install various different packages and make too many environmnental changes. Its almost worth having a seperate SD card for different projects.
 
 
 ### Step 1.
