@@ -7,8 +7,7 @@ These steps ran surprisingly smoothly for me but note I deliberately worked from
 Acquire an Nvidia Jetson Nano (developer) there are two memory options buy the one with the greatest amount of memory (4GB).
 ### Step 2.
 Download and install the Balena Etcher [tool](https://www.balena.io/etcher/) suitable for your operating system. 
-Flash the latest Jetpack to the SD Card this guide will only work for >=jetpack 4.6, and has only been tested for [4.6]
-(https://developer.nvidia.com/embedded/jetpack)
+Flash the latest Jetpack to the SD Card this guide will only work for >=[Jetpack 4.6](https://developer.nvidia.com/embedded/jetpack), and has only been tested for Jetpack 4.6
 Use Etcher to flash the jetpack-4.6
 ### Step 3.
 Insert the flashed image into the Jetson, log in to the Jetson.
@@ -17,7 +16,7 @@ Git is already installed with Jetpack 4.6
 CUDA Toolkit is already installed when on Jetpack 4.6 although you may be prompted to agree to the licence when you first log in to the Jetson.
 
 ### Step 4
-The rest is very loosely based on the instructions for installing `genn` (https://github.com/genn-team/genn).
+The rest is very loosely based on the instructions for installing [genn](https://github.com/genn-team/genn).
 
 ### Step 5
 #### Leave a message to inform your compiler where CUDA lives (for future reference)
