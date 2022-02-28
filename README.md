@@ -1,7 +1,7 @@
 
 
 <h1 align="center">
-  Jetson Knight Potjans
+  GENN on Jetson
 </h1>
 
 <p align="center">
