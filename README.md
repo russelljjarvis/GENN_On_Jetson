@@ -85,9 +85,12 @@ Install the GENN source code
 Now run:
   
 ```
+cd $HOME
+mkdir git
+cd git
 git clone https://github.com/genn-team/genn # obtain the genn source code
 cd genn # enter the directory of the genn code
-echo "export PATH=$PATH:/home/me/genn/bin" >> ~/.bashrc
+echo "export PATH=$PATH:/home/git/genn/bin" >> ~/.bashrc
 source ~/.bashrc
 ```
   
