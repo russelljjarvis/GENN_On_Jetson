@@ -37,90 +37,90 @@ These steps ran surprisingly smoothly for me but note I deliberately worked from
 
 ### Setup Jetson Nano  
 
-      <details>
-      <summary> Step 1. </summary> 
+<details>
+<summary> Step 1. </summary> 
 
-      Acquire an [Nvidia Jetson Nano](https://developer.nvidia.com/embedded/jetson-nano-developer-kit) (developer) there are two memory options buy the one with the greatest amount of memory (4GB).
-      </details>
+Acquire an [Nvidia Jetson Nano](https://developer.nvidia.com/embedded/jetson-nano-developer-kit) (developer) there are two memory options buy the one with the greatest amount of memory (4GB).
+</details>
 
-      <details>
-      <summary> Step 2. </summary> 
+<details>
+<summary> Step 2. </summary> 
 
 
-      Download and install the Balena Etcher [tool](https://www.balena.io/etcher/) suitable for your operating system. 
-      Flash the latest Jetpack to the SD Card this guide will only work for >=[Jetpack 4.6](https://developer.nvidia.com/embedded/jetpack), and has only been tested for Jetpack 4.6
-      Use Etcher to flash the jetpack-4.6
+Download and install the Balena Etcher [tool](https://www.balena.io/etcher/) suitable for your operating system. 
+Flash the latest Jetpack to the SD Card this guide will only work for >=[Jetpack 4.6](https://developer.nvidia.com/embedded/jetpack), and has only been tested for Jetpack 4.6
+Use Etcher to flash the jetpack-4.6
 
-      </details>
+</details>
 
-      <details>
-      <summary> Step 3. </summary> 
+<details>
+<summary> Step 3. </summary> 
 
-      Insert the flashed image into the Jetson, log in to the Jetson.
-      Lucky for you I think:
-      * Git is already installed with Jetpack 4.6
-      * CUDA Toolkit is already installed when on Jetpack 4.6 
-      However, you may be prompted to agree to the licence when you first log in to the Jetson.
+Insert the flashed image into the Jetson, log in to the Jetson.
+Lucky for you I think:
+* Git is already installed with Jetpack 4.6
+* CUDA Toolkit is already installed when on Jetpack 4.6 
+However, you may be prompted to agree to the licence when you first log in to the Jetson.
 
-      </details>
+</details>
 
 ### Setup GENN  
   
-    <details>
-    <summary> Step 1. </summary>   
+<details>
+<summary> Step 1. </summary>   
 
-    The rest is modified from the instructions for installing [genn](https://github.com/genn-team/genn).
-    For future reference make a note to inform your compiler where CUDA lives.
+The rest is modified from the instructions for installing [genn](https://github.com/genn-team/genn).
+For future reference make a note to inform your compiler where CUDA lives.
 
-    In the terminal run:
+In the terminal run:
 
-    ```
-    echo "export CUDA_PATH=/usr/local/cuda" >> ~/.bashrc
-    echo "export PATH=$PATH:$CUDA_PATH/bin" >> ~/.bashrc
-    ```
+```
+echo "export CUDA_PATH=/usr/local/cuda" >> ~/.bashrc
+echo "export PATH=$PATH:$CUDA_PATH/bin" >> ~/.bashrc
+```
 
-    </details>
+</details>
 
-    <details>
-    <summary> Step 2. </summary>   
-    Install the GENN source code
-    Now run:
+<details>
+<summary> Step 2. </summary>   
+Install the GENN source code
+Now run:
 
-    ```
-    cd $HOME
-    mkdir git
-    cd git
-    git clone https://github.com/genn-team/genn # obtain the genn source code
-    cd genn # enter the directory of the genn code
-    echo "export PATH=$PATH:/home/git/genn/bin" >> ~/.bashrc
-    source ~/.bashrc
-    ```
+```
+cd $HOME
+mkdir git
+cd git
+git clone https://github.com/genn-team/genn # obtain the genn source code
+cd genn # enter the directory of the genn code
+echo "export PATH=$PATH:/home/git/genn/bin" >> ~/.bashrc
+source ~/.bashrc
+```
 
-    </details>
+</details>
 
-    <details>
-    <summary> Step 3. </summary>   
-    Use GENN to compile the Potjans model
-    If you are still in the genn directory:
+<details>
+<summary> Step 3. </summary>   
+Use GENN to compile the Potjans model
+If you are still in the genn directory:
 
-    ```
-    cd /userproject/PotjansMicrocircuit_project
-    make #compiles the Potjans model
-    ```
+```
+cd /userproject/PotjansMicrocircuit_project
+make #compiles the Potjans model
+```
 
-    </details>
+</details>
 
-    <details>
-    <summary> Step 4. </summary>   
-    Run the model
-    This final step runs the compiled binary of the Potjans model, you can configure the model itself too, before compiling it.
+<details>
+<summary> Step 4. </summary>   
+Run the model
+This final step runs the compiled binary of the Potjans model, you can configure the model itself too, before compiling it.
 
-    ```
-    ./generate_run test
-    ```
+```
+./generate_run test
+```
 
-    The model runs and spike times are recorded to disk. The model executes in a timely fashion.
-    </details>
+The model runs and spike times are recorded to disk. The model executes in a timely fashion.
+</details>
 
 
   
