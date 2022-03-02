@@ -126,11 +126,12 @@ The model runs and spike times are recorded to disk. The model executes in a tim
   
 ### Simulation outputs:
 If everything went to plan you should see print statements like the following:
+```
 Total neurons=38582, total synapses=74715499
 ~40,000 neurons
 Simulation:1.71324 seconds
 Record:0.0336334s
-
+```
   
 ### Profile GPU code execution.
 All of these bash commands help you to read out GPU activity while the model is being run.
