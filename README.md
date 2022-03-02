@@ -34,12 +34,10 @@ These steps ran surprisingly smoothly for me but note I deliberately worked from
 </details>
 
 ## Installation Steps
-Only steps: **4-7** involve setting up GENN.
 
-<details>  
-<summary> Setup Jetson Nano </summary> 
+### Setup Jetson Nano  
 
-  <details>
+      <details>
       <summary> Step 1. </summary> 
 
       Acquire an [Nvidia Jetson Nano](https://developer.nvidia.com/embedded/jetson-nano-developer-kit) (developer) there are two memory options buy the one with the greatest amount of memory (4GB).
@@ -66,15 +64,10 @@ Only steps: **4-7** involve setting up GENN.
 
       </details>
 
-</details>  
-
-  
-
-<details>  
-<summary> Setup GENN </summary>   
+### Setup GENN  
   
     <details>
-    <summary> Step 4. </summary>   
+    <summary> Step 1. </summary>   
 
     The rest is modified from the instructions for installing [genn](https://github.com/genn-team/genn).
     For future reference make a note to inform your compiler where CUDA lives.
@@ -89,7 +82,7 @@ Only steps: **4-7** involve setting up GENN.
     </details>
 
     <details>
-    <summary> Step 5. </summary>   
+    <summary> Step 2. </summary>   
     Install the GENN source code
     Now run:
 
@@ -106,7 +99,7 @@ Only steps: **4-7** involve setting up GENN.
     </details>
 
     <details>
-    <summary> Step 6. </summary>   
+    <summary> Step 3. </summary>   
     Use GENN to compile the Potjans model
     If you are still in the genn directory:
 
@@ -118,7 +111,7 @@ Only steps: **4-7** involve setting up GENN.
     </details>
 
     <details>
-    <summary> Step 7. </summary>   
+    <summary> Step 4. </summary>   
     Run the model
     This final step runs the compiled binary of the Potjans model, you can configure the model itself too, before compiling it.
 
@@ -129,8 +122,6 @@ Only steps: **4-7** involve setting up GENN.
     The model runs and spike times are recorded to disk. The model executes in a timely fashion.
     </details>
 
-  
-</details>  
 
   
 ### Simulation outputs:
