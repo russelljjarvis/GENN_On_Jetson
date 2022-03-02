@@ -120,31 +120,40 @@ This final step runs the compiled binary of the Potjans model, you can configure
 The model runs and spike times are recorded to disk. The model executes in a timely fashion.
 </details>
 
+  
+### Simulation outputs:
+If everything went to plan you should see print statements like the following:
+Total neurons=38582, total synapses=74715499
+~40,000 neurons
+Simulation:1.71324 seconds
+Record:0.0336334s
+
+  
+### Profile GPU code execution.
+All of these bash commands help you to read out GPU activity while the model is being run.
+ ```
+  watch -n0.1 nvidia-smi
+  nvidia-smi -cp
+  nvidia-smi -q -g 0 -d UTILIZATION -l
+```
+Alternatively you could Use the tool `jtop` and or `tegrastats` (built in) to profile the Jetson's GPU and to confirm that the GPU is experiencing full utilization.  
+
+[Profilers](https://stackoverflow.com/questions/8223811/a-top-like-utility-for-monitoring-cuda-activity-on-a-gpu)
+    
+  
 ## Development Plans
   
 #### DONE
 
 - [x] Showed that a GENN model can run on Nvidia Jetson Nano.
 #### TODO
-- [ ] Use the tool `jtop` and or `tegrastats` (built in) to profile the Jetson's GPU and to confirm that the GPU is experiencing full utilization.  
-  https://stackoverflow.com/questions/8223811/a-top-like-utility-for-monitoring-cuda-activity-on-a-gpu
-```
-  watch -n0.1 nvidia-smi
-  nvidia-smi -cp
-  nvidia-smi -q -g 0 -d UTILIZATION -l
 
-
-```
 - [ ] Visualize model output in Julia and upload data and code to this repository.
 - [ ] Re-wire cortical model to fit V1, attach NMNIST input data to LGN/thalamus
 - [ ] Try the larger version of Potjans/Knight even though it is predicted to cause a memory exhaustion failure.
   
+    
   
-  Total neurons=38582, total synapses=74715499
-  ~40,000 neurons
-Simulation:1.71324 seconds
-Record:0.0336334s
-
   
   
 
