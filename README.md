@@ -15,7 +15,8 @@
 <p align="center">
   
 ## Description
-This is a basic guide for configuring the Nvidia Jetson Nano for running the GENN Potjan et al cortical model implemented by Knight et al in Cpp/CUDA.
+This is a basic guide for configuring the Nvidia Jetson Nano for running the GENN Potjan's et al cortical model of ~40,000 neurons
+, this model was implemented by Knight et al in Cpp/CUDA.
 
 ## Motivation
 <details>
@@ -24,6 +25,8 @@ This is a basic guide for configuring the Nvidia Jetson Nano for running the GEN
 The nvidia Jetson nano is a cheap ($249 AUD) development board that comes with a modest Nvidia GPU. Although the Maxwell GPU only has ~100's of CUDA cores, the Jetson nano enables people to develop and test GPU compliant code on affordable local resource. Additionally the Jetson Nano may consume significantly less electricity than large workstations. 
 
 Neuromorphic hardware is theoretically a great platform for simulating cortical models but it is currently not available to hobbiests. Access to Neuromorphic hardware requires a formal application, however the Nvidia Jetson Nano is an affordable product available at a small cost. A model of cortex developed by Knight was implemented using Cpp/CUDA technologies on GPU hardware, this model has been re-designed to run at an increasing large scale and only the smaller version of the model has been tested here.
+  
+  
 </details>
 
  ## User Experience
@@ -128,7 +131,6 @@ The model runs and spike times are recorded to disk. The model executes in a tim
 If everything went to plan you should see print statements like the following:
 ```
 Total neurons=38582, total synapses=74715499
-~40,000 neurons
 Simulation:1.71324 seconds
 Record:0.0336334s
 ```
