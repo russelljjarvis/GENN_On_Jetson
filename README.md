@@ -25,6 +25,9 @@ This is a basic guide for configuring the Nvidia Jetson Nano for running the GEN
 The nvidia Jetson nano is a cheap ($249 AUD) development board that comes with a modest Nvidia GPU. Although the Maxwell GPU only has ~100's of CUDA cores, the Jetson nano enables people to develop and test GPU compliant code on affordable local resource. Additionally the Jetson Nano may consume significantly less electricity than large workstations. 
 
 Neuromorphic hardware is theoretically a great platform for simulating cortical models but it is currently not available to hobbiests. Access to Neuromorphic hardware requires a formal application, however the Nvidia Jetson Nano is an affordable product available at a small cost. A model of cortex developed by Knight was implemented using Cpp/CUDA technologies on GPU hardware, this model has been re-designed to run at an increasing large scale and only the smaller version of the model has been tested here.
+
+ ![from https://arxiv.org/pdf/2106.06752.pdf](https://user-images.githubusercontent.com/7786645/165446452-9ac303d7-4db3-4bba-b7e3-cd60059e08c5.png)
+ 
   
   
 </details>
@@ -151,6 +154,8 @@ Alternatively you could Use the tool `jtop` and or `tegrastats` (built in) to pr
   
 #### DONE
 
+  
+  
 - [x] Showed that a GENN model can run on Nvidia Jetson Nano.
 #### TODO
 
