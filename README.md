@@ -162,8 +162,28 @@ Alternatively you could Use the tool `jtop` and or `tegrastats` (built in) to pr
 - [ ] Visualize model output in Julia and upload data and code to this repository.
 - [ ] Re-wire cortical model to fit V1, attach NMNIST input data to LGN/thalamus
 - [ ] Try the larger version of Potjans/Knight even though it is predicted to cause a memory exhaustion failure.
+
   
-    
+Off the Jetson, and running on Lambda GPU server, compiling+executing the model takes 12 seconds.  
+time ./generate_run test
+ running test...
+0%
+10%
+20%
+30%
+40%
+50%
+60%
+70%
+80%
+90%
+Simulation:1.02172 seconds
+Record:0.0276392s
+
+real	0m12.461s
+user	0m10.352s
+sys	0m2.030s
+
   
   
   
